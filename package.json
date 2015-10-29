@@ -71,7 +71,7 @@
         "point": "services:config",
         "module": "lib/config",
         "loader": "loader"
-      }, 
+      }
     ]
   },
   "author": "Project Jupyter",
