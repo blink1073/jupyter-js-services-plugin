@@ -14,7 +14,7 @@ import {
 export
 function loader(): any {
   return {
-    'getKernelSpects': getKernelSpecs,
+    'getKernelSpecs': getKernelSpecs,
     'listRunningKernels': listRunningKernels,
     'startNewKernel': startNewKernel,
     'connectToKernel': connectToKernel,
