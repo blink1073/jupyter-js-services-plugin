@@ -26,7 +26,7 @@ Source Build
 
 ```bash
 git clone https://github.com/jupyter/jupyter-js-services-plugin.git
-cd jupyter-js-services
+cd jupyter-js-services-plugin
 npm install
 npm run build
 ```
