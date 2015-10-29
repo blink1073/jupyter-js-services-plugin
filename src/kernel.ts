@@ -8,3 +8,16 @@ import {
 } from 'jupyter-js-services';
 
 
+/**
+ * Return a namespace with the exported function.
+ */
+export
+function loader(): any {
+  return {
+    'getKernelSpects': getKernelSpecs,
+    'listRunningKernels': listRunningKernels,
+    'startNewKernel': startNewKernel,
+    'connectToKernel': connectToKernel,
+    'createKernelMessage': createKernelMessage
+  }
+}
