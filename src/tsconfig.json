@@ -11,6 +11,7 @@
     "outDir": "../lib"
   },
   "files": [
+    "../typings/es6-promise.d.ts",
     "index.ts",
     "config.ts",
     "contents.ts",
