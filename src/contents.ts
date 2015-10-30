@@ -17,6 +17,6 @@ export
 function loadContents(): Promise<IContentsProvider> {
   return Promise.resolve({
     name: 'jupyter-js-services',
-    contentsConstructor: (baseUrl: string) => { return new Contents(baseUrl); }
+    contentsFactory: (baseUrl: string) => { return new Contents(baseUrl); }
   });
 }

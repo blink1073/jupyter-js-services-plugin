@@ -11,7 +11,7 @@
   "devDependencies": {
     "expect.js": "^0.3.1",
     "istanbul": "^0.3.18",
-    "jupyter-js-metaservice-plugin": "^0.2.0",
+    "jupyter-js-metaservice-plugin": "^0.2.1",
     "karma": "^0.13.9",
     "karma-browserify": "^4.3.0",
     "karma-chrome-launcher": "^0.2.0",
