@@ -2,6 +2,21 @@
 // Distributed under the terms of the Modified BSD License.
 
 import { 
-  Contents, IContents
+  Contents
 } from 'jupyter-js-services';
 
+import {
+  IContentsProvider
+} from 'jupyter-js-metaservice-plugin';
+
+
+/**
+ * Load the `jupyter-metaservice:contents` extension.
+ */
+export
+function loadContents(): Promise<IContentsProvider> {
+  return Promise.resolve({
+    name: 'jupyter-js-services',
+    contentsConstructor: (baseUrl: string) => { return new Contents(baseUrl); }
+  });
+}

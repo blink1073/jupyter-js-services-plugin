@@ -6,12 +6,12 @@
   "typings": "lib/index.d.ts",
   "dependencies": {
     "phosphor-disposable": "^1.0.4",
-    "jupyter-js-services": "^0.0.1",
-    "phosphor-plugins": "git://github.com/phosphorjs/phosphor-plugins.git"
+    "jupyter-js-services": "^0.0.1"
   },
   "devDependencies": {
     "expect.js": "^0.3.1",
     "istanbul": "^0.3.18",
+    "jupyter-js-metaservice-plugin": "^0.2.0",
     "karma": "^0.13.9",
     "karma-browserify": "^4.3.0",
     "karma-chrome-launcher": "^0.2.0",
@@ -20,6 +20,7 @@
     "karma-mocha": "^0.2.0",
     "karma-mocha-reporter": "^1.1.1",
     "mocha": "^2.2.5",
+    "phosphor-plugins": "git://github.com/phosphorjs/phosphor-plugins.git",
     "rimraf": "^2.4.2",
     "typedoc": "^0.3.11",
     "typescript": "^1.6.2"
@@ -53,24 +54,24 @@
   "phosphor-plugin": {
     "extensions": [
       {
-        "point": "services:kernel",
+        "point": "jupyter-metaservice:kernel",
         "module": "lib/kernel",
-        "loader": "loader"
+        "loader": "loadKernel"
       },
       {
-        "point": "services:session",
+        "point": "jupyter-metaservice:session",
         "module": "lib/session",
-        "loader": "loader"
-      }, 
+        "loader": "loadSession"
+      },
       {
-        "point": "services:contents",
+        "point": "jupyter-metaservice:contents",
         "module": "lib/contents",
-        "loader": "loader"
-      },    
+        "loader": "loadContents"
+      },
       {
-        "point": "services:config",
+        "point": "jupyter-metaservice:config",
         "module": "lib/config",
-        "loader": "loader"
+        "loader": "loadConfig"
       }
     ]
   },
